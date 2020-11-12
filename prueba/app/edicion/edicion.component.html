@@ -1,0 +1,51 @@
+
+<div class="card" >
+    <h1>EDICION DEL USUARIO {{id}}</h1>
+    <form [formGroup]="myForm" (ngSubmit)="saveData()" >
+        <div > 
+            <p>Nombre Completo</p>
+        <input formControlName="fLastName" type="text" placeholder="tu primer apellido" >
+        <input formControlName="sLastName" type="text" placeholder="tu segundo apellido">
+        <input formControlName="fName" type="text" placeholder="primer nombre">
+        <input formControlName="sLastName" type="text" placeholder="otros nombres"> <br><br>
+        <p>Pais</p>
+        <input formControlName="contry" type="radio" id="male" name="contry" value="US">
+        <label for="Estados Unidos">Estados Unidos</label><br>
+        <input formControlName="contry" type="radio" id="female" name="contry" value="CO">
+        <label for="Colombia">Colombia</label><br>
+        <p>Documento</p>
+        <select formControlName="tipoI" class="js-select2" name="tipo" id=tipo>
+            <option>CC</option>
+            <option>CE</option>
+            <option>P</option>
+            <option>PE</option>
+        </select>
+        <br><br>
+        <p>Documento</p>
+        <input formControlName="numI" type="text" placeholder="numero de identificacion">
+
+        <p>fecha Ingreso</p>
+        <input formControlName="fechaIngreso" type="text" placeholder="numero de identificacion">
+
+        <p>Area</p>
+        <input formControlName="area" type="text" placeholder="numero de identificacion">    
+        </div>
+        <div >
+        <button type="submit" >Guardar</button>
+        </div>
+    </form>
+
+
+</div>
+
+
+
+    
+
+
+    
+
+
+
+
+
